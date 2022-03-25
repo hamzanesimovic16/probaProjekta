@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
 					VALUES ('$username', '$email', '$password', '$jmbg', '$odjeljenje')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
-				echo "<script>alert('Wow! User Registration Completed.')</script>";
+				echo "<script>alert('Registracija je uspjesno obavljena!')</script>";
 				$username = "";
 				$email = "";
 				$jmbg="";
@@ -34,14 +34,14 @@ if (isset($_POST['submit'])) {
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {
-				echo "<script>alert('Woops! Something Wrong Went.')</script>";
+				echo "<script>alert('Oops! Nesto nije uredu!')</script>";
 			}
 		} else {
-			echo "<script>alert('Woops! Email Already Exists.')</script>";
+			echo "<script>alert('Ooops! Taj Email vec postoji!')</script>";
 		}
 		
 	} else {
-		echo "<script>alert('Password Not Matched.')</script>";
+		echo "<script>alert('Passwordi se ne podudaraju!')</script>";
 	}
 }
 
@@ -57,14 +57,14 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Register Form - Pure Coding</title>
+	<title>Registracija - Pametni Ulaz</title>
 </head>
 <body style="background-image: url(skola.jpg);">
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Registracija</p>
 			<div class="input-group">
-				<input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+				<input type="text" placeholder="Korisničko ime" name="username" value="<?php echo $username; ?>" required>
 			</div>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
@@ -93,12 +93,12 @@ if (isset($_POST['submit'])) {
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
             </div>
             <div class="input-group">
-				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+				<input type="password" placeholder="Potvrdite Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Register</button>
+				<button name="submit" class="btn">Registruj</button>
 			</div>
-			<p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
+			<p class="login-register-text">Imate već akaunt? <a href="index.php">Prijavite se ovdje</a>.</p>
 		</form>
 	</div>
 </body>
