@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 
 	<title>Login Form - Pametni ulaz</title>
 </head>
-<body style="background-image: url(https://static.hayat.ba/2019/10/himnazija-obala.jpg);">
+<body style="background-image: url(skola.jpg);">
 	<div class="container">
 		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
