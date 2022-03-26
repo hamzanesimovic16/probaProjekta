@@ -16,8 +16,9 @@ if (isset($_POST['submit'])) {
 	$jmbg=$_POST['jmbg'];
 	$odjeljenje=$_POST['odjeljenje'];
 	$password = md5($_POST['password']);
-	$cpassword = md5($_POST['cpassword']);
+	$cpassword = md5($_POST['cpassword']);	
 
+	
 	if ($password == $cpassword) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
