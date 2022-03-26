@@ -19,12 +19,7 @@ session_start();
 		<div class="col-sm-3">
 			<?php
 				
-                    $sql="SELECT jmbg FROM users;";
-                    $result=mysqli_query($conn, $sql);
-                    $resultCheck=mysqli_num_rows($result);
-                    $row=mysqli_fetch_assoc($result);
-
-					$code=$row['jmbg'];
+					$code=$_SESSION['jmbg'];
 					echo "
 						<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=$code&choe=UTF-8'>
 					";
