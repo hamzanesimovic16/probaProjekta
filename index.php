@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
 		
 		header("Location: welcome.php");
 	} else {
-		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
+		echo "<script>alert('Ooops! Email ili Password je pogresan.')</script>";
 	}
 }
 
