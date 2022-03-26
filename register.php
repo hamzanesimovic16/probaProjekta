@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	$odjeljenje=$_POST['odjeljenje'];
 	$password = md5($_POST['password']);
 	$cpassword = md5($_POST['cpassword']);
-
+	
 	if ($password == $cpassword) {
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
@@ -43,7 +43,9 @@ if (isset($_POST['submit'])) {
 	} else {
 		echo "<script>alert('Passwordi se ne podudaraju!')</script>";
 	}
+	
 }
+
 
 ?>
 

@@ -19,7 +19,12 @@ if (!isset($_SESSION['username'])) {
 	<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
-    <?php echo "<h1>Welcome " . $_SESSION['username'] .  "</h1>"; ?>
+    <?php 
+		
+		echo "<h1>Welcome " . $_SESSION['username'] .  "</h1>";
+		
+	
+	?>
     <a href="logout.php">Logout</a>
 
 	
