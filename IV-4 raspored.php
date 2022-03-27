@@ -79,6 +79,22 @@
           </table>    
 
 
+    
+        <br><br>
+        <form method="POST">
+                        
+            <button type="submit" name="vratiNazad" class="dugme">Vrati se na početnu stranicu</button>
+                    
+        </form>
+                    
+        <div>
+            <?php
+                if(isset($_POST['vratiNazad'])){
+                    header("Location: welcome.php");
+                }
+            ?>
+        </div>
+
     </center>
 </body>
 </html>

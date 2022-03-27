@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
 	
 </head>
 <body>
-    <?php echo "<h1>Welcome " . $_SESSION['username'] .  "</h1>"; ?>
+    <?php echo "<h1>Welcome " . $_SESSION['username'] .   "</h1>"; ?>
     <a href="logout.php">Logout</a>
 
 	
@@ -31,12 +31,28 @@ if (!isset($_SESSION['username'])) {
 			<center>  <button type="submit" name="qrkod" class="dugme">Tvoj QR kod</button> </center>
 
 		</form>
+		<br>
+		<form method="POST">
+					
+			<center>  <button type="submit" name="raspored" class="dugme">Tvoj raspored</button> </center>
+
+		</form>
 	</div>
 	
-	<div class="col-sm-3">
+	<div>
 		<?php
 			if(isset($_POST['qrkod'])){
 				header("Location: qrkodGenerator.php");
+			}
+			
+			if(isset($_POST['raspored']))
+			{
+				switch($_SESSION['odjeljenje'])
+				{
+					case "IV-4":
+						header("Location: IV-4 raspored.php");
+					break;	
+				}
 			}
 		?>
 	</div>

@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
 		$_SESSION['jmbg']=$row['jmbg'];
+		$_SESSION['odjeljenje']=$row['odjeljenje'];
 		
 		header("Location: welcome.php");
 	} else {
