@@ -15,28 +15,31 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Welcome</title>
+	
 </head>
 <body>
     <?php echo "<h1>Welcome " . $_SESSION['username'] .  "</h1>"; ?>
     <a href="logout.php">Logout</a>
 
 	
+	<br><br>
+	<div id="dugmadiOpcije">
+		<form method="POST">
+					
+			<center>  <button type="submit" name="qrkod" class="dugme">Tvoj QR kod</button> </center>
 
-    <form method="POST">
-				
-	    <button type="submit" name="qrkod">Tvoj QR kod</button>
-
-	</form>
-		
-		<div class="col-sm-3">
-			<?php
-				if(isset($_POST['qrkod'])){
-					header("Location: qrkodGenerator.php");
-				}
-			?>
-		</div>
+		</form>
+	</div>
+	
+	<div class="col-sm-3">
+		<?php
+			if(isset($_POST['qrkod'])){
+				header("Location: qrkodGenerator.php");
+			}
+		?>
+	</div>
 	
 </body>
 </html>

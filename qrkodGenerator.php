@@ -8,12 +8,14 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <title>QRkodGenerator</title>
 </head>
 <body>
     
     <center>    
-        <h1>Tvoj QR kod</h1>
+    <br><br>    
+    <h1>Tvoj QR kod</h1>
         <br>
 	
 		<div class="col-sm-3">
@@ -30,7 +32,7 @@ session_start();
 
         <form method="POST">
                     
-            <button type="submit" name="vratiNazad">Vrati se na početnu stranicu</button>
+            <button type="submit" name="vratiNazad" class="dugme">Vrati se na početnu stranicu</button>
                     
         </form>
                     

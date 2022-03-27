@@ -1,0 +1,23 @@
+/*  #66D3FA*/
+/*  #3C99DC  */
+
+
+.dugme {
+    display: block;
+    width: 20%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #66D3FA;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dugme:hover {
+    transform: translateY(-5px);
+    background: #3C99DC;
+}
