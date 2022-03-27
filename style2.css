@@ -21,3 +21,8 @@
     transform: translateY(-5px);
     background: #3C99DC;
 }
+
+
+table, th, td {
+    border: 1px solid black;
+  }
