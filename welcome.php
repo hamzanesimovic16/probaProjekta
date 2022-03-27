@@ -51,7 +51,13 @@ if (!isset($_SESSION['username'])) {
 				{
 					case "IV-4":
 						header("Location: IV-4 raspored.php");
-					break;	
+					break;
+
+					case "IV-3":
+						header("Location: IV-3 raspored.php");
+					break;
+					
+					
 				}
 			}
 		?>
