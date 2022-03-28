@@ -18,12 +18,19 @@ if (!isset($_SESSION['username'])) {
 	<link rel="stylesheet" type="text/css" href="style2.css">
     <title>Welcome</title>
 	
+	
 </head>
 <body>
+	<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+</ul>
+	
     <?php echo "<h1>Welcome " . $_SESSION['username'] .   "</h1>"; ?>
     <a href="logout.php">Logout</a>
 
-	
 	<br><br>
 	<div id="dugmadiOpcije">
 		<form method="POST">
