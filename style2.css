@@ -1,6 +1,11 @@
 /*  #66D3FA*/
 /*  #3C99DC  */
 
+*{
+    margin: 0;
+
+}
+
 
 .dugme {
     display: block;
