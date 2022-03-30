@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="style2.css">
         <title>IV-3 raspored</title>
     </head>
-    <body>
+    <body class="pozadina">
 
     <ul>
 

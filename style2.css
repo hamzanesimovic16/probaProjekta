@@ -71,7 +71,10 @@ table, th, td {
   }
 
   .pozadina{
-    background-color: #B6D3EB;
+    background-color: 	#cfe0f0;
   }
 
+  .col-sm-3 img{
+    border-radius: 25px;
+  }
   

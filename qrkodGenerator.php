@@ -32,7 +32,7 @@ session_start();
 				
 					$code=$_SESSION['jmbg'];
 					echo "
-						<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=$code&choe=UTF-8'>
+						<img  src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=$code&choe=UTF-8'>
 					";
 				
 			?>
