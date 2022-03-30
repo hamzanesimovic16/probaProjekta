@@ -12,7 +12,16 @@ session_start();
     <title>QRkodGenerator</title>
 </head>
 <body>
-    
+    <ul>
+
+        
+        <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+        <li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
+
+    </ul>    
+
+
+
     <center>    
     <br><br>    
     <h1>Tvoj QR kod</h1>

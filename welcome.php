@@ -23,9 +23,7 @@ if (!isset($_SESSION['username'])) {
 <body>
 	<ul>
 
-		<li><a href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-		<li><a href="#contact">Contact</a></li>
+		<li class="pametniUlaz">Pametni ulaz</li>
 		<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
 		<li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
   

@@ -1,3 +1,7 @@
+<?php  
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,15 @@
     <title>IV-4 Raspored časova</title>
 </head>
 <body>
+    <ul>
+
+       
+        <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
+        <li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
+
+    </ul>
+
+
     <center>
         <br>
         <h1>IV-4 raspored časova</h1>
