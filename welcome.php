@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
 	
 	
 </head>
-<body>
+<body class="pozadina">
 	<ul>
 
 		<li class="pametniUlaz">Pametni ulaz</li>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
    
 
 	<br><br>
-	<div id="dugmadiOpcije">
+	<div id="dugmadiOpcije" class="dugmediv">
 		<form method="POST">
 					
 			<center>  <button type="submit" name="qrkod" class="dugme">Tvoj QR kod</button> </center>

@@ -65,8 +65,13 @@ table, th, td {
   }
 
   .pametniUlaz{
-    font-family: 'Sora', sans-serif;
     color:white;
     
 
   }
+
+  .pozadina{
+    background-color: #B6D3EB;
+  }
+
+  

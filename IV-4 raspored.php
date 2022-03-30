@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style2.css">
     <title>IV-4 Raspored časova</title>
 </head>
-<body>
+<body class="pozadina">
     <ul>
 
        

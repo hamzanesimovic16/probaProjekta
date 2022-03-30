@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="style2.css">
     <title>QRkodGenerator</title>
 </head>
-<body>
+<body class="pozadina">
     <ul>
 
         
