@@ -21,11 +21,11 @@ if (!isset($_SESSION['username'])) {
 	
 </head>
 <body class="pozadina">
-	<ul>
-
+	<ul id="navbar">
+		<li><img src="https://i.ibb.co/9ySnS99/Artboard-1.png" id="logo"></li>
 		<li class="pametniUlaz">Pametni ulaz</li>
-		<li style="float:right"><a class="active" href="logout.php">Logout</a></li>
-		<li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
+		<li style="float:right"><a class="active" href="logout.php" id="navigation">Logout</a></li>
+		<li style="float:right"><a href="" id="navigation"><?php echo $_SESSION['username'] ?></a></li>
   
 	</ul>
 	
@@ -34,17 +34,23 @@ if (!isset($_SESSION['username'])) {
 
 	<br><br>
 	<div id="dugmadiOpcije" class="dugmediv">
-		<form method="POST">
+
+	 <form method="POST" id="buttonQR">
 					
 			<center>  <button type="submit" name="qrkod" class="dugme">Tvoj QR kod</button> </center>
 
-		</form>
+		</form> 
+
+
 		<br>
-		<form method="POST">
+
+	<form method="POST" id="buttonRaspored">
 					
 			<center>  <button type="submit" name="raspored" class="dugme">Tvoj raspored</button> </center>
 
 		</form>
+	
+	
 	</div>
 	
 	<div>

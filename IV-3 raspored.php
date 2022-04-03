@@ -15,14 +15,15 @@
 
     <ul>
 
-       
+        <li><img src="https://i.ibb.co/9ySnS99/Artboard-1.png" id="logo"></li>
+        <li class="pametniUlaz">IV-3 raspored</li>
         <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
         <li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
 
     </ul>
     <center>
 
-        <h1>IV-3 raspored izrada u toku...</h1>
+        <h1 style="color: white;">IV-3 raspored izrada u toku...</h1>
 
 
         <br><br>

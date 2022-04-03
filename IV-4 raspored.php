@@ -14,16 +14,19 @@
 <body class="pozadina">
     <ul>
 
-       
+        <li><img src="https://i.ibb.co/9ySnS99/Artboard-1.png" id="logo"></li>
+        <li class="pametniUlaz">IV-4 raspored</li>
         <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
         <li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
 
     </ul>
 
-
     <center>
         <br>
-        <h1>IV-4 raspored časova</h1>
+
+        <div id="tabela">
+
+        <h1 style="color: white;">IV-4 raspored časova</h1>
         
         <table>
             <tr>
@@ -91,7 +94,7 @@
             </tr>
           </table>    
 
-
+</div>
     
         <br><br>
         <form method="POST">

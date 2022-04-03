@@ -9,16 +9,27 @@
 
 }
 
+body
+{
+  background-image: url("https://i.ibb.co/fpx9Myb/background-Skola.png");
+  width: 100vw;
+  height: 105vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
 
 .dugme {
     display: block;
-    width: 20%;
+    width: 50%;
+    height: 100px;
     padding: 15px 20px;
     text-align: center;
     border: none;
     background: #66D3FA;
     outline: none;
-    border-radius: 30px;
+    border-radius: 75px;
     font-size: 1.2rem;
     color: #FFF;
     cursor: pointer;
@@ -33,13 +44,15 @@
 
 table, th, td {
     border: 1px solid black;
+    background-color: #fff;
+    padding: 5px;
   }
 
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     overflow: hidden;
     background-color: #333;
   }
@@ -66,15 +79,30 @@ table, th, td {
 
   .pametniUlaz{
     color:white;
+    padding-top: 15px;
+    padding-left: 10px;
     
 
   }
 
-  .pozadina{
-    background-color: 	#cfe0f0;
-  }
-
   .col-sm-3 img{
     border-radius: 25px;
+    padding-bottom: 20px;
   }
-  
+
+  #dugmadiOpcije
+  {
+    width: 100%;
+    height: 150%;
+    position: fixed;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #logo
+  {
+    height: 53px;
+    width: 53px;
+    padding-left: 10px;
+  }

@@ -13,8 +13,9 @@ session_start();
 </head>
 <body class="pozadina">
     <ul>
-
         
+        <li><img src="https://i.ibb.co/9ySnS99/Artboard-1.png" id="logo"></li>
+        <li class="pametniUlaz">QR Code generator</li>
         <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
         <li style="float:right"><a href=""><?php echo $_SESSION['username'] ?></a></li>
 
@@ -24,7 +25,7 @@ session_start();
 
     <center>    
     <br><br>    
-    <h1>Tvoj QR kod</h1>
+    <h1 style="color: white;">Tvoj QR kod</h1>
         <br>
 	
 		<div class="col-sm-3">
