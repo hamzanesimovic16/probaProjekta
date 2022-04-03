@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Pametni Ulaz</title>
+	<title>Prijava - Pametni Ulaz</title>
 </head>
 <body style="background-image: url(skola.jpg);">
 	<div class="container">
